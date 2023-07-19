@@ -410,15 +410,91 @@ nav {
     display: flex;
 }
 
+/* footer style */
 
+footer {
+    background: #0B0223;
+    margin: auto;
+    text-align: center;
+    height: 500px;
+    margin-top: 4rem;
+}
 
+.footer-container {
+    max-width: 1300px;
+    margin: auto;
+    text-align: center;
+}
 
+.footer-title img {
+    width: 86.041px;
+    height: 40px;
+    margin-right: 5px;
+}
 
+.footer-title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5rem;
+    align-items: center;
+}
 
+.footer-title-style {
+    color: #F948B2;
+}
 
+.footer-list ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding-top: 4rem;
+}
 
+.footer-list ul li a {
+    color: white;
+    padding: 25px;
+    text-decoration: none;
 
+}
 
+.footer-icons ul {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem auto;
+}
+
+.footer-icons ul li {
+    list-style: none;
+    padding: 20px;
+}
+
+.footer-icons ul li a i {
+    color: white;
+    font-size: 30px;
+}
+
+.footer-smaa-list ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.footer-smaa-list ul li {
+    padding-right: 1.5rem;
+    color: white;
+    list-style: none;
+}
+
+.footer-copyright {
+    color: white;
+    padding-top: 1rem;
+
+}
 
 
 
@@ -514,6 +590,45 @@ nav {
         font-weight: 200;
     }
 
+    /* footer start */
+    .footer-list ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+
+    .footer-list ul li a {
+        padding-right: 0;
+    }
+
+    .footer-list ul li {
+        padding-top: 20px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .footer-icons ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .footer-smaa-list ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-copyright {
+        color: rgba(255, 255, 255, 0.60);
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
 }
 
 
@@ -572,6 +687,36 @@ nav {
     }
 
     /* online game section end */
+    .play-instant-container {
+        flex-direction: column;
+    }
 
+    .play-informatin {
+        padding-left: 0;
+    }
+
+    .play-sec-title,
+    .play-description {
+        text-align: center;
+    }
+
+    .play-photos {
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    /* play-instant end */
+    .games-item {
+        flex-basis: 246px;
+        width: 100%;
+    }
+
+    .games-name {
+        color: #0B0223;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    /* footer */
 
 }
