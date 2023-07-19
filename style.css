@@ -558,6 +558,46 @@ footer {
         height: calc(100% - 5px);
     }
 
+    .online-game-title {
+        color: #0B0223;
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .game-description {
+        margin-bottom: .2.2rem;
+        color: #534C64;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-top: 2px;
+    }
+
+    .game-detailes {
+        color: #534C64;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: center;
+        margin-top: .5rem;
+    }
+
+    .game-card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .play-instandly {
+
+        text-align: center;
+        /* height: 650px; */
+        margin-top: 0;
+        padding-bottom: 8rem;
+    }
+
     /* online game section end */
     .play-instant-container {
         flex-direction: column;
@@ -619,6 +659,7 @@ footer {
     .footer-smaa-list ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
     }
 
     .footer-copyright {
