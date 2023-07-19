@@ -192,8 +192,9 @@ nav {
 
 .online-game {
     max-width: 1300px;
-    margin: auto;
+    margin: 4rem auto;
     text-align: center;
+
 }
 
 .online-game-title {
@@ -216,53 +217,76 @@ nav {
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    margin: 1.4rem auto;
+    margin: 2rem auto;
 }
 
 .game-card-container {
     display: flex;
     justify-content: space-between;
-    gap: 1.4rem;
+    gap: 1rem;
 }
 
-.game-card-1 {
+.game-card {
     width: 342px;
     height: 400px;
     border: 5px solid white;
     margin-bottom: 1.5rem;
-    background-image: url("./images/Rectangle\ 4.png");
-}
-.card-text-icon{
-    z-index: 5;
-    
+    position: relative;
 }
 
+
 .game-detailes {
-    color: white;
+    color: #534C64;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
     text-align: left;
     margin-top: 1rem;
     z-index: 5;
+    margin-bottom: 1rem;
 }
 
-.game-card-1:hover {
-    border: 5px solid #F948B2;
+.play-btn-container {
+    position: absolute;
+    top: 0;
+    font-size: 70px;
+    color: white;
+    left: -1px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
+    background: cover;
+    z-index: 4;
+    visibility: hidden;
+    width: 296px;
+    height: 396px;
     border-radius: 20px;
-    /* background:  rgb(68, 55, 55) / cover no-repeat; */
-    background:  black / cover no-repeat;
-    opacity: .5;
-    z-index: 2;
-    
+
+    outline: none;
 }
-.icon-play{
-    
+
+.game-card:hover>.play-btn-container {
+    visibility: visible;
+    border: 5px solid #FF42A5;
 }
-/* .card-hover{
-    color: linear-gradient(180deg, #F948B2 0%, #0c0b0b9a 100%);
-    z-index: 9;
-} */
+
+.play-btn {
+     margin-top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.watch-btn {
+    text-align: center;
+    color: #FF42A5;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: .5rem;
+}
+
+/*  */
+
+
 
 
 
@@ -315,14 +339,28 @@ nav {
         background-image: 100%;
         padding: 50px;
     }
+         /* banner end */
+      .game-card-container{
+        flex-direction: column;
+        align-items: center;
+         gap: 4rem;
+      }
+      .play-btn-container {
+        width: calc(100% - 5px);
+        height: calc(100% - 5px);
+    }
+    /* online game section end */
 
 }
+
+
 
 
 /* responsive for tablet */
 @media screen and (min-width:576px) and (max-width:960px) {
     nav {
         flex-direction: column;
+        
     }
 
     .icon-title {
@@ -333,7 +371,41 @@ nav {
         margin: 30px auto;
 
     }
-
     /* nav end */
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .banner-img {
+        width: 100%;
+    }
+
+    .banner {
+        background-image: none;
+    }
+
+    .banner-img {
+        max-width: 80%;
+    }
+    .banner-info {
+        background-image: url("./images/Group 14.png");
+        background-position-x: left;
+        background-image: 100%;
+        padding: 50px;
+    }
+    /* banner end */
+    .game-card-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        text-align: center;
+        margin: auto;
+        padding-left: 10px;
+      }
+      .play-btn-container {
+        width: calc(100% - 5px);
+        height: calc(100% - 5px);
+    }
+    /* online game section end */
+
 
 }
